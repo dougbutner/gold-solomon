@@ -47,9 +47,9 @@ function Home() {
           <tbody>
             {CHAINS.map((c) => (
               <tr key={c.id} className="border-t border-line">
-                <td className="py-3">{c.label}</td>
-                <td className="py-3 text-gold">{c.status}</td>
-                <td className="py-3 text-muted">{c.note}</td>
+                <td className="py-3 pr-3 align-top">{c.label}</td>
+                <td className="py-3 pr-3 align-top text-gold">{c.status}</td>
+                <td className="py-3 align-top break-all text-muted">{c.note}</td>
               </tr>
             ))}
           </tbody>
