@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #100e0b;
+  --color-surface: #1a1612;
+  --color-surface-2: #241f19;
+  --color-fg: #f6f1e7;
+  --color-muted: #a89a86;
+  --color-gold: #e0b15a;
+  --color-gold-deep: #8c5a12;
+  --color-line: #3a3228;
+  --color-bad: #e07a62;
+  --color-ok: #c6d7a2;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --radius: 0px;
+}
+
+@layer base {
+  html, body { background: var(--color-bg); color: var(--color-fg); }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+  button:disabled { cursor: not-allowed; opacity: 0.4; }
+  body { font-family: var(--font-sans); }
+}
+
+@utility desk-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
